@@ -1,9 +1,13 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/Cursogo/variables"
 )
 
 func main() {
-	variables.MostrarVariables()
+	estado, texto := variables.ConviertoaTexto(293838)
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
