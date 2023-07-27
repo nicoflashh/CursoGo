@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/Cursogo/variables"
+	"github.com/Cursogo/ejercicios"
 )
 
 func main() {
-	estado, texto := variables.ConviertoaTexto(293838)
-	fmt.Println(estado)
+	num, texto := ejercicios.ConvertirString("150")
+	fmt.Println(num)
 	fmt.Println(texto)
+
 }
