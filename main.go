@@ -1,14 +1,12 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/Cursogo/ejercicios"
+	"github.com/Cursogo/funciones"
 )
 
 func main() {
-	num, texto := ejercicios.ConvertirString("fff")
-	fmt.Println(num)
-	fmt.Println(texto)
+	//fmt.Println(ejercicios.TablaMultiplicar())
+	//files.GrabaTabla()
 
+	funciones.Exponencia(2)
 }
