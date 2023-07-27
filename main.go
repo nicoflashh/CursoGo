@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/Cursogo/funciones"
+	arreglosslice "github.com/Cursogo/arreglos_slice"
 )
 
 func main() {
 	//fmt.Println(ejercicios.TablaMultiplicar())
 	//files.GrabaTabla()
 
-	funciones.Exponencia(2)
+	arreglosslice.Capacidad()
 }
