@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/Cursogo/mapas"
+	e "github.com/Cursogo/ejercicio_interfaces"
+	"github.com/Cursogo/modelos"
 )
 
 func main() {
 	//fmt.Println(ejercicios.TablaMultiplicar())
 	//files.GrabaTabla()
-
-	mapas.MostrarMapas()
+	Pedro := new(modelos.Persona)
+	e.PersonaRespira(Pedro)
 }
