@@ -1,12 +1,12 @@
 package main
 
 import (
-	arreglosslice "github.com/Cursogo/arreglos_slice"
+	"github.com/Cursogo/mapas"
 )
 
 func main() {
 	//fmt.Println(ejercicios.TablaMultiplicar())
 	//files.GrabaTabla()
 
-	arreglosslice.Capacidad()
+	mapas.MostrarMapas()
 }
