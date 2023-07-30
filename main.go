@@ -1,13 +1,16 @@
 package main
 
 import (
-	e "github.com/Cursogo/ejercicio_interfaces"
-	"github.com/Cursogo/modelos"
+	"fmt"
+
+	"github.com/Cursogo/goroutines"
 )
 
 func main() {
-	//fmt.Println(ejercicios.TablaMultiplicar())
-	//files.GrabaTabla()
-	Pedro := new(modelos.Persona)
-	e.PersonaRespira(Pedro)
+
+	go goroutines.MiNombreLento("tusmuertos")
+
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
 }

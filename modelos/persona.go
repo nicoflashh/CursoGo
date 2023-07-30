@@ -11,6 +11,7 @@ type Persona struct {
 }
 
 func (p *Persona) Respira()       { p.respirando = true }
-func (p *Persona) Comer()         { p.respirando = true }
-func (p *Persona) Pensar()        { p.respirando = true }
+func (p *Persona) Comer()         { p.comiendo = true }
+func (p *Persona) Pensar()        { p.pensando = true }
 func (p *Persona) Genero() string { return "mujer" }
+func (p *Persona) EstaVivo() bool { return true }
