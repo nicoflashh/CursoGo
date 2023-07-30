@@ -1,16 +1,19 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/Cursogo/goroutines"
+	"github.com/Cursogo/middleware"
 )
 
 func main() {
-	canal1 := make(chan bool)
-	go goroutines.MiNombreLento("tusmuertos", canal1)
-	fmt.Println("Estoy aqui")
+	/*
+		canal1 := make(chan bool)
+		go goroutines.MiNombreLento("tusmuertos", canal1)
 
-	<-canal1
+		defer func() {
+			<-canal1
+		}()
+		fmt.Println("Estoy aqui")
+	*/
 
+	middleware.MiMiddleware()
 }
