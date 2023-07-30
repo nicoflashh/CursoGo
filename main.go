@@ -7,10 +7,10 @@ import (
 )
 
 func main() {
-
-	go goroutines.MiNombreLento("tusmuertos")
-
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLento("tusmuertos", canal1)
 	fmt.Println("Estoy aqui")
-	var x string
-	fmt.Scanln(&x)
+
+	<-canal1
+
 }
